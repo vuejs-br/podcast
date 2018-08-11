@@ -1,6 +1,6 @@
 <script>
 import Youtube from '../components/youtube.vue'
-import Aplayer from 'vue-aplayer'
+const Aplayer = () => import('vue-aplayer')
 
 export default {
   components: { Youtube, Aplayer },
