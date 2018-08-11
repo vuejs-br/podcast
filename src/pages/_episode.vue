@@ -7,9 +7,13 @@
 
 <script>
 export default {
-  asyncData: async ({ app, route, payload }) => ({
-    post: payload || await app.$content('/').get(route.path)
-  })
+  asyncData: async ({ app, route, payload }) => {
+    const { section, slug } = route.params
+    console.log({ section, slug })
+    return ({
+      post: payload || await app.$content('/seasons').get(route.path)
+    })
+  }
 }
 </script>
 
