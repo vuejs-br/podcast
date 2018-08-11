@@ -9,8 +9,8 @@ export default {
 <template>
   <div>
     <PageHeader />
-    <div class="container">
-      <nuxt/>
+    <div class="section">
+      <nuxt class="container"/>
     </div>
   </div>
 </template>
